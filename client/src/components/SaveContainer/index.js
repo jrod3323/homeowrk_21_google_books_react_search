@@ -6,7 +6,7 @@ function SaveContainer() {
         <div style={{display:"flex",justifyContent:"center"}}>
         <div className="container " style={{margin:"10px" , border:"solid", borderColor:"grey", justifyContent:"center"}}>
             <h1>Saved Books</h1>
-            <div className="card py-3" style={{ justifyContent:"center", textAlign:"center"}}>
+            <div className="card " style={{ justifyContent:"center", textAlign:"center"}}>
                 <div >
                     <img className="card-img-top" src="http://books.google.com/books/content?id=sazytgAACAAJ&printsec=frontcover&img=1&zoom=1&source=gbs_api" alt="Card image cap" style={{width:"40px", height:"40px", textAlign:"center"}}/>
                 </div>
