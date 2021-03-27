@@ -20,7 +20,18 @@ function ResultsContainer(props) {
                         <h5>Author: {item.volumeInfo.authors}</h5>
                         <p className="card-text">{item.volumeInfo.description}</p>
                         <a href={item.volumeInfo.canonicalVolumeLink} target="_blank" rel="noreferrer" className="btn btn-primary">Go To Book</a>
-                        <button type="button" className="btn btn-primary" style={{margin:"3px"}}>
+                        <button 
+                            type="button" 
+                            className="btn btn-primary" 
+                            style={{margin:"3px"}}
+                            onClick = {()=>{props.saveBooks({
+                                title: item.volumeInfo.title,
+                                author: item.volumeInfo.authors ,
+                                synopsis: item.volumeInfo.description,
+                                image: item.volumeInfo.imageLinks.thumbnail ,
+                                link: item.volumeInfo.canonicalVolumeLink,
+                            })}}
+                            >
                             Save Book
                         </button>
                     </div>

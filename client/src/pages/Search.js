@@ -21,7 +21,7 @@ function SearchPage() {
       .catch(error => console.log(error))
   }
 
-  function saveBooks (data){
+  function saveBooks(data){
     API.saveBook(data)
   }
 
@@ -29,7 +29,7 @@ function SearchPage() {
     <div>
       <SearchJumbo />
       <Search search={searchBooks}/>
-      <ResultsContainer results={search} save={saveBooks}/>
+      <ResultsContainer results={search} saveBooks={saveBooks}/>
     </div>
   );
 }
