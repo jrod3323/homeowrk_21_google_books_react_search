@@ -14,7 +14,6 @@ function SearchPage() {
       .then(res => {
         if(res.data.items){
           setSearch(res.data.items);
-          console.log(res.data.items)
         }
       }
       )

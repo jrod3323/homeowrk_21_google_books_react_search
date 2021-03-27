@@ -24,13 +24,13 @@ function ResultsContainer(props) {
                             type="button" 
                             className="btn btn-primary" 
                             style={{margin:"3px"}}
-                            onClick = {()=>{props.saveBooks({
+                            onClick = {()=>props.saveBooks({
                                 title: item.volumeInfo.title,
-                                author: item.volumeInfo.authors ,
+                                author: item.volumeInfo.authors[0] ,
                                 synopsis: item.volumeInfo.description,
                                 image: item.volumeInfo.imageLinks.thumbnail ,
                                 link: item.volumeInfo.canonicalVolumeLink,
-                            })}}
+                            })}
                             >
                             Save Book
                         </button>
